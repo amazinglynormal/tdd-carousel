@@ -23,7 +23,7 @@ class Carousel extends React.PureComponent {
   handleNextClick = () => {
     const { slides } = this.props;
     this.setState(({ slideIndex }) => ({
-      slideIndex: slideIndex + (1 % slides.length),
+      slideIndex: (slideIndex + 1) % slides.length,
     }));
   };
 
