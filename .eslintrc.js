@@ -1,17 +1,7 @@
 module.exports = {
-    extends: ["eslint:recommended", "plugin:react/recommended"],
-    parserOptions: {
-        ecmaVersion: 6,
-        sourceType: "module",
-        ecamFeatures: {
-            jsx: true
-        }
-    },
-    env: {
-        node: true,
-    },
-    rules: {
-        quotes: ['error', 'single', {avoidEscape: true}],
-        "comma-dangle": ["error", "always-multiline"]
-    }
-}
+  extends: ["eslint:recommended", "plugin:react/recommended"],
+  parser: "@babel/eslint-parser",
+  env: {
+    node: true,
+  },
+};
