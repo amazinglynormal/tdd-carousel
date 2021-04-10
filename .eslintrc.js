@@ -4,4 +4,7 @@ module.exports = {
   env: {
     node: true,
   },
+  settings: {
+    react: { version: "detect" },
+  },
 };
